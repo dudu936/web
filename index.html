@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Matrícula de Aluno">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulário de Matrícula</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="format-text">
+                <h1>Matrícula Do Aluno</h1>
+                <p>Preencha as informações abaixo</p>
+            </div>
+            <form>
+                <div class="group">
+                    <label for="senha">Nome:</label>
+                    <input type="email" placeholder="Digite seu Nome">
+                    <label for="senha">Senha:</label>
+                    <input type="password" placeholder="Digite sua senha">
+                </div>
+                <div class="radio">
+                    <label>
+                        Masculino
+                        <input type="radio" name="gender" value="Masculino">
+                    </label>
+                    <label>
+                        Feminino
+                        <input type="radio" name="gender" value="Feminino">
+                    </label>
+                </div>
+                <div class="select">
+                    <label for="nacionalidade">Nacionalidade:
+                    <select name="nacionalidade" id="nacionalidade">
+                        <option value="brasileiro">Brasileiro</option>
+                        <option value="argentino">Argentino</option>
+                        <option value="canadense">Canadense</option>
+                    </select>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>Python
+                        <input type="checkbox" name="linguagem" value="python">
+                    </label>
+                    <label>Java
+                        <input type="checkbox" name="linguagem" value="java">
+                    </label>
+                    <label>Php
+                        <input type="checkbox" name="linguagem" value="php">
+                    </label>
+                    <label>C#
+                        <input type="checkbox" name="linguagem" value="c#">
+                    </label>
+                    <label>Javascript
+                        <input type="checkbox" name="linguagem" value="javascript">
+                    </label>
+                </div>
+                <div class="area">
+                    <label for="mensagem">
+                        <div class="text-textarea">
+                            Comente Sobre Você
+                        </div>
+                        <textarea id="mensagem" name="mensagem" rows="3" cols="40"></textarea>
+                    </label>
+                </div>
+                <div class="button-format">
+                    <button type="submit">Matricular</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
